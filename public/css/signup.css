@@ -1,0 +1,68 @@
+.sign-container h1 {
+    font-size: 1.6rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-container form input {
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 40px;
+    padding: 0 5%;
+    font-size: 1.2rem;
+    margin: 30px auto;
+}
+
+.sign-container form button {
+    background-color: #ACB6E5;
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 30px auto;
+
+    font-size: 1.2rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.sign-container form button:hover {
+    background-color: rgb(153, 164, 216);
+}
+
+.sign-container p {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.sign-container p a {
+    text-decoration: none;
+    color: white;
+    background-color: #ACB6E5;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.4s ease-in-out;
+}
+
+.sign-container p a:hover {
+    background-color: rgb(153, 164, 216);
+}
+
+@media only screen and (max-width: 375px) {
+    .app-container {
+        width: 90%;
+    }
+    .sign-container .signup {
+        font-size: 1.3rem;
+    }
+}

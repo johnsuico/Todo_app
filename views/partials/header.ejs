@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/be18c64d8c.js" crossorigin="anonymous"></script>
+    <!-- fontAwesome -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/master.css"> <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="css/nav.css"> <!-- Navbar Styling -->
+    <link rel="stylesheet" type="text/css" href="css/hero.css"> <!-- Homepage hero Styling -->
+    <link rel="stylesheet" type="text/css" href="css/tasktracker.css"> <!-- Main app Styling -->
+    <link rel="stylesheet" type="text/css" href="css/signup.css"> <!-- Signup Styling -->
+    <!-- CSS -->
+
+    <title>Express Todo App</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container container">
+            <div class="brand-container">
+                <h1> <a href="/">Task Tracker</a> </h1>
+            </div>
+            <div class="link-menu">
+                <ul class="link-list">
+                    <% if(!currentUser) { %>
+                        <li class="link-item"><a href="/login">Login</a></li>
+                        <li class="link-item"><a href="/signup">Signup</a></li>
+                    <% } else { %>
+                        <li class="link-item" id="userName"><p>Hi, <%= currentUser.username %>!</p></li>
+                        <li class="link-item"><a href="/tasktracker">My TaskTracker</a></li>
+                        <li class="link-item"><a href="/logout">Logout</a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </nav>

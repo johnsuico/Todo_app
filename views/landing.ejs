@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+
+    <div class="app-container">
+        <div class="top-bar container">
+            <h2 class="app-title">Tasks</h2>
+            <i class="fas fa-plus"></i>
+        </div>
+        <form action="/tasktracker" method="POST" class="app">
+            <input type="text" maxlength="48" placeholder="Create task here" name="task">
+        </form>
+        <% task.forEach(task => { %>
+            <% if (currentUser.id == task.author.id) { %>
+                <li class="task-item"> 
+                    <%= task.task %>
+                    <div class="task-icons">
+                        <form action="/tasktracker/<%= task._id %>?_method=DELETE" method="POST">
+                            <button id="delete-button"><i class="fas fa-trash"></i></button>       
+                        </form>
+                    </div>
+                </li>
+            <% } %>
+        <% }); %>
+    </div>
+
+<%- include("partials/footer") %>

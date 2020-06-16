@@ -1,0 +1,39 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    height: 96vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.hero-caption {
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.cta {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.cta:hover {
+    background-color: #ACB6E5;
+    border: 1px solid #ACB6E5;
+}
+
+@media only screen and (max-width: 375px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+}

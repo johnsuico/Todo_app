@@ -1,0 +1,53 @@
+nav {
+    color: white;
+    height: 4vh;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.brand-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.brand-container h1 {
+    font-size: 1.5rem;
+}
+
+.link-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.link-list li {
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+.link-list p {
+    font-size: 1rem;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 375px) {
+    .brand-container h1 {
+        font-size: 1rem;
+    }
+    #userName {
+        display: none;
+    }
+    .link-item a {
+        font-size: 0.9rem;
+    }
+}
