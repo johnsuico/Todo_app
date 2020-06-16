@@ -8,7 +8,7 @@ const   express                 = require("express"),
 
 
 // Database connection
-mongoose.connect("mongodb://localhost/tasktracker", {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
+mongoose.connect("mongodb+srv://johnsuico:Random12@cluster0-mukjb.mongodb.net/<dbname>?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 
 // Models
 const   Task    = require("./models/tasks");
